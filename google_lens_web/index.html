@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Lens | OCR Text Selector</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Outfit:wght@400;600;900&display=swap" rel="stylesheet">
+    <!-- Tesseract.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <div class="logo-icon">✨</div>
+                <h1>Magic<span>Lens</span></h1>
+            </div>
+            <div class="mode-toggle">
+                <span class="mode-label">Lens Mode</span>
+                <label class="switch">
+                    <input type="checkbox" id="modeSwitch">
+                    <span class="slider round"></span>
+                </label>
+                <span class="mode-label">Highlight</span>
+            </div>
+            <button id="uploadTrigger" class="primary-btn">
+                <span>Upload Image</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+            </button>
+        </header>
+
+        <main>
+            <!-- Stage -->
+            <div class="stage-wrapper">
+                <div id="dropZone" class="drop-zone">
+                    <div class="drop-content">
+                        <div class="upload-icon">📸</div>
+                        <h2>Drop your image here</h2>
+                        <p>or click the upload button above</p>
+                        <input type="file" id="fileInput" hidden accept="image/*">
+                    </div>
+                </div>
+
+                <div id="imageStage" class="image-stage hidden">
+                    <img id="sourceImage" draggable="false">
+                    <div id="overlayContainer" class="overlay-container"></div>
+                    
+                    <!-- Loading Spinner -->
+                    <div id="loadingOverlay" class="loading-overlay hidden">
+                        <div class="spinner"></div>
+                        <p>Analyzing text with AI...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side/Bottom Panel -->
+            <section class="info-panel hidden" id="infoPanel">
+                <div class="panel-header">
+                    <h2>Extracted Data</h2>
+                    <p>Smart detection from your image</p>
+                </div>
+                <div class="grid-container" id="extractionGrid">
+                    <!-- Cards will be injected here -->
+                </div>
+                <div class="reset-area">
+                    <button id="newImageBtn" class="secondary-btn">New Selection</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Built with magic and Tesseract.js</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

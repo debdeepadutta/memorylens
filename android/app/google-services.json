@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1014343078519",
+    "project_id": "memorylens-52eea",
+    "storage_bucket": "memorylens-52eea.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014343078519:android:967b623439f3721a09ec72",
+        "android_client_info": {
+          "package_name": "com.memorylens"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1014343078519-qt11bjf8jhgu3si6nn2r8rsqr67rh1uj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.memorylens",
+            "certificate_hash": "92338a03512d38d398a93108d9249e24596679bb"
+          }
+        },
+        {
+          "client_id": "1014343078519-lpfatntkc3lhi6tgnhaegd1pelmfu9in.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz0GXoafZ3ayCaxs5FwupMONrIeo0reRg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1014343078519-lpfatntkc3lhi6tgnhaegd1pelmfu9in.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
