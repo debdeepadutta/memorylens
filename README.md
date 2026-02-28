@@ -70,7 +70,7 @@ All of this happens **100% on your device**. No cloud. No account. No privacy ri
 ## 📲 Installation
 
 ### Direct APK Download
-1. Download the latest APK from [Releases](https://github.com/Debdeepa-cs/memorylens/releases/latest)
+1. Download the latest APK from [Releases](https://github.com/debdeepadutta/memorylens/releases/latest)
 2. Enable "Install from unknown sources" on your Android phone
 3. Open the downloaded APK and install
 4. Grant photo permissions when asked
