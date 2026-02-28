@@ -1,2 +1,2 @@
 # memorylens
-Privacy-first offline photo search app
+Privacy-first offline AI photo search app built with Flutter
